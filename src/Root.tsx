@@ -4,6 +4,7 @@ import { HelloWorld, myCompSchema } from "./HelloWorld";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
 import { GoldRanking } from "./GoldRanking";
 import { GPT5 } from "./GPT5";
+import { Revenue } from "./Revenue";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -43,6 +44,15 @@ export const RemotionRoot: React.FC = () => {
         id="GoldRanking"
         component={GoldRanking}
         durationInFrames={270}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      <Composition
+        id="Revenue"
+        component={Revenue}
+        durationInFrames={300}
         fps={30}
         width={1920}
         height={1080}
